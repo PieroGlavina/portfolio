@@ -6,13 +6,17 @@ const NavBar = () => {
         <nav>
             <div className="p-5 mx-8  flex justify-between ">
 
-                <h1 className="text-2xl font-bold ">Piero Glavina</h1>
+                <a className="cursor-pointer" href="/">
+                    <h1 className="text-2xl font-electrolize ">Piero Glavina</h1>
+                </a>
 
                 <div className="flex items-center justify-center">
                     {navList.map((nav) => (
                         <a href={nav.href}>
-                            <div key={nav.id}
-                                 className="px-7 text-xl cursor-pointer text-gray-400">
+                            <div
+                                key={nav.id}
+                                 className="font-electrolize px-7 text-xl cursor-pointer text-gray-400 hover:text-gray-700 transition-all"
+                            >
                                 <p>//  {nav.title}</p>
                             </div>
                         </a>
