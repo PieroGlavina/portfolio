@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&display=swap');
+
+
+@theme {
+    --font-electrolize: "Electrolize", sans-serif;
+}
+
