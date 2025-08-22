@@ -2,23 +2,11 @@ import React, {useRef} from 'react'
 
 const Hero = () => {
 
-    const videoRef = useRef(null);
-
-    const handleMouseEnter = () => {
-        if (videoRef.current) videoRef.current.playbackRate = 2;
-    };
-
-    const handleMouseLeave = () => {
-        if (videoRef.current) videoRef.current.playbackRate = 1;
-    };
-
-
     return (
-        <section className="h-[80vh] w-full relative">
+        <section className="h-screen w-full relative">
 
             <video
-                ref={videoRef}
-                className="absolute top-10 left-[45%] aspect-square w-[40%]  z-0 "
+                className="absolute top-10 left-[45%] aspect-square w-[40%] z-0 "
                 autoPlay
                 muted
                 playsInline
@@ -31,7 +19,7 @@ const Hero = () => {
             <img src="/images/circuitDx.png" alt="Circuit" className="object-contain absolute -top-2 right-0 md:w-fit w-1/4 z-10" />
 
             <div className="w-full h-full flex justify-center items-center z-10 relative mt-3">
-                <div className="absolute w-2/3 mr-60 mb-10">
+                <div className="w-2/3 mr-60 mb-45">
                     <h1 className="text-9xl font-electrolize">Piero Glavina</h1>
                     <h3 className="text-5xl font-electrolize">Web & 3D Experience Creator</h3>
                     <p className="text-2xl font-electrolize mt-20 w-2/3">
@@ -40,9 +28,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center items-center my-4">
-                <p className="text-gray-400 font-bold">Scoll to explore my works and my skills</p>
-            </div>
         </section>
     )
 }
